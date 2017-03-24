@@ -1,0 +1,47 @@
+<!-- Wrapper-->
+<!--<div id="wrapper">
+
+    &lt;!&ndash; Navigation &ndash;&gt;
+    <div ng-include="'views/common/navigation.html'"></div>
+
+    &lt;!&ndash; Page wraper &ndash;&gt;
+    &lt;!&ndash; ng-class with current state name give you the ability to extended customization your view &ndash;&gt;
+    <div id="page-wrapper" class="gray-bg {{$state.current.name}}">
+        &lt;!&ndash; Page wrapper &ndash;&gt;
+        <div ng-include="'views/common/topnavbar.html'"></div>-->
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-10">
+                <h2><a ng-href="#/tables/nggrid">返回/</a><strong>员工添加</strong></h2>
+            </div>
+        </div>
+        <div ng-controller="addCtrl" class="middle-box text-center loginscreen   animated fadeInDown">
+            <div>
+                <h3>添加用户</h3>
+                <form class="m-t" role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" ng-model="newData.Name" placeholder="名称" validate-on="blur" required required-message="'不能为空'">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" ng-model="newData.Code" placeholder="编号" validate-on="blur" required required-message="'不能为空'">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" ng-model="newData.Age" placeholder="年龄" validate-on="blur" required required-message="不能为空">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" ng-model="newData.Department" placeholder="部门" validate-on="blur" required required-message="'不能为空'">
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control" auto-close="true" ng-model="newData.EntryTime" placeholder="入职时间" validate-on="blur" required required-message="'不能为空'">
+                    </div>
+                    <button type="submit" class="btn btn-primary block full-width m-b" ng-click="AddItem()">提交</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer -->
+       <!-- <div ng-include="'views/common/footer.html'"></div>
+
+    </div>
+    &lt;!&ndash; End page wrapper&ndash;&gt;
+
+</div>-->
+<!-- End wrapper-->
